@@ -1,108 +1,114 @@
-:root{
-    --vermelho:#E50914;
-    --preta:#141414;
-}
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Short Stack', cursive;
 }
 
-/*elementos base*/
-body{
-   background: var(--preta);
-   font-family: 'Arial', Times, serif;
-   color:white;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)80%), url('/img/ubwcDK.png'); */
+    background: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color:rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header {
+    background-color:rgb(10, 10, 10);
+    text-shadow: rgb(0, 0, 0) 5px 5px 1px;
 }
 
 
-header .container{
-    display:flex;
+header .container {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
 }
 
-header .logo{
+header .logo {
     margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+    color: lavender;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
 }
 
-header nav a{
-    text-decoration:none;
-    color:#AAA;
+header nav a {
+    text-decoration: none;
+    color: rgb(215, 243, 250);
     margin-right: 10px;
 }
 
-
-header nav a:hover{
-    color:#fff;
+header nav a:hover {
+    color: rgb(65, 127, 129);
 }
 
-/*filme principal*/
-.filme-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
-
-    height:400px;
-    background-size:cover;
- 
-
+.manga-principal {
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/one-piece-merged-volumes-covers.jpg');
+    height: 400px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-shadow: rgb(0, 0, 0) 2px 2px 1px;
 }
 
-
-.filme-principal .descricao{
+.manga-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
-
-.filme-principal .titulo{
+.manga-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.botao{
+.botao {
     background-color: rgba(0,0,0,.50);
-    border:none;
+    border: none;
     color: white;
-
-    padding:15px 30px;
+    padding: 10px 30px;
     margin-right: 15px;
     font-size: 12px;
+    box-shadow: black 2px 2px 1px;
+    border-radius: 20%;
 
     cursor: pointer;
     transition: .3s ease all;
 }
 
 .botao:hover{
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-
-.container{
+.container {
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.manga-principal .container {
     width: 70%;
 }
 
-.box-filme{
+.box-manga{
     height: 100%;
     width: 100%;
     display: block;
@@ -110,25 +116,20 @@ header nav a:hover{
 }
 
 
-.carrosel-filmes{
+.carrossel-mangas{
     margin-top:5px;
 }
 
+.item {
+    height: 300px;
+    width: fit-content;
+    box-shadow: black 3px 3px 3px;
+}
 
+.social {
+    margin-left: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#social {
+    display: flex;
+}
